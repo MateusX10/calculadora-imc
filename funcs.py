@@ -27,19 +27,32 @@ def abrir_github():
 
 def mostrar_descricao_imc():
     # Descrição sobre o IMC
-    descricao_imc = (
-        "O Índice de Massa Corporal (IMC) é uma medida que relaciona o peso e a altura de uma pessoa. "
-        "Ele é frequentemente utilizado como uma maneira rápida de avaliar se uma pessoa está dentro de um intervalo "
-        "de peso considerado saudável. O cálculo do IMC é feito dividindo o peso da pessoa (em quilogramas) pela sua altura "
-        "ao quadrado (em metros). A interpretação do resultado pode variar, mas, em geral:\n\n"
-        "- IMC abaixo de 18,5: Abaixo do peso\n"
-        "- IMC entre 18,5 e 24,9: Peso saudável\n"
-        "- IMC entre 25 e 29,9: Sobrepeso\n"
-        "- IMC 30 ou superior: Obesidade\n\n"
-        "É importante notar que o IMC é uma ferramenta de triagem inicial e não leva em consideração outros fatores importantes, "
-        "como a distribuição de gordura no corpo. Consultar um profissional de saúde é fundamental para uma avaliação mais completa e precisa."
-    )
+    descricao_imc = ('''O Índice de Massa Corporal (IMC) é uma medida que te permite determinar se você está com o peso ideal ou não.\nAbaixo, você pode conferir a classificação do IMC:
+
+- IMC abaixo de 18,5: Abaixo do peso\n
+- IMC entre 18,5 e 24,9: Peso saudável\n
+- IMC entre 25 e 29,9: Sobrepeso\n
+- IMC 30 ou superior: Obesidade\n\n\n
+
+
+* Se quiser saber mais sobre o IMC, você pode conferir o nosso Guia do IMC em: ajuda -> Guia do IMC.
+    ''')
     messagebox.showinfo("O que é IMC?", descricao_imc)
+
+
+
+def abrir_guia_do_imc():
+
+    import webbrowser
+    import os
+
+
+
+    caminho_do_arquivo_html = os.path.join(os.path.dirname(__file__), 'guia_imc.html')
+
+    caminho_do_arquivo_css = os.path.join(os.path.dirname(__file__), 'style.css')
+
+    webbrowser.open_new(caminho_do_arquivo_html)
 
 
 
@@ -68,6 +81,8 @@ def cria_e_define_menus_e_submenus(janela):
 
 
     menu_ajuda.add_command(label="Visitar github do autor", command=abrir_github)
+
+    menu_ajuda.add_command(label="Guia do IMC", command=abrir_guia_do_imc)
 
 
 
