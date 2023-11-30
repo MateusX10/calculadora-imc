@@ -70,10 +70,12 @@ area_de_texto.pack()
 botao_calcular_imc = tk.Button(janela, text="calcular", command=lambda: calcular_imc(entrada_para_nome, entrada_para_peso, entrada_para_altura, area_de_texto))
 
 # empacota esse botão a aplicação
-botao_calcular_imc.pack()
+botao_calcular_imc.pack(pady=10)
 
 botao_imc = tk.Button(janela, text="o que é IMC?", command=mostrar_descricao_imc)
 
+
+# "pady" configura um espaçamento interno vertical na qual proporciona um espaço de 10 unidades em cima e embaixo do botão
 botao_imc.pack(pady=10)
 
 # executa a aplicação
