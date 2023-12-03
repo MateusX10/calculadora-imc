@@ -22,7 +22,7 @@ cria_e_define_menus_e_submenus(janela)
 
 
 # cria uma label2 com o texto "informe o seu nome"
-label2 = tk.Label(janela, text="informe o seu nome: ")
+label2 = tk.Label(janela, text="\ninforme o seu nome: ")
 
 # empacota a label2 na aplicação
 label2.pack()
@@ -34,7 +34,7 @@ entrada_para_nome = tk.Entry(janela)
 entrada_para_nome.pack()
 
 # cria uma label para peso
-label3 = tk.Label(janela, text="informe o seu peso: Kg")
+label3 = tk.Label(janela, text="\ninforme o seu peso: Kg")
 
 # empacota a label 3 na aplicação
 label3.pack()
@@ -47,7 +47,7 @@ entrada_para_peso = tk.Entry(janela)
 entrada_para_peso.pack()
 
 # cri uma label que diz "informe a sua altura: "
-label4 = tk.Label(janela, text="informe a sua altura: [M]")
+label4 = tk.Label(janela, text="\ninforme a sua altura: [M]")
 
 # empacota a label4 na aplicação
 label4.pack()
@@ -59,8 +59,9 @@ entrada_para_altura = tk.Entry(janela)
 entrada_para_altura.pack()
 
 
+
 # cria uma área de texto onde será exibida a mensagem ao usuário sobre o seu IMC
-area_de_texto = tk.Text(janela, height=5, width=30, state=tk.DISABLED)
+area_de_texto = tk.Text(janela, height=5, width=45, state=tk.DISABLED)
 
 # empacota a área de texto na aplicação
 area_de_texto.pack()

@@ -169,7 +169,7 @@ def calcular_imc(nome, peso, altura, area_de_texto):
     mensagem_situacao_de_saude = define_a_situacao_de_saude_do_usuario(imc)
 
     # define a mensagem a ser exibida ao usuário
-    mensagem_ao_usuario = f"{nome_usuario}, seu IMC é de {imc:.1f} \nVocê está com {mensagem_situacao_de_saude}."
+    mensagem_ao_usuario = f"-> {nome_usuario}, seu IMC é de {imc:.1f} \n\n-> Você está com {mensagem_situacao_de_saude}."
 
     # define a área de texto para a possibilidade de gravar dados nela
     area_de_texto.config(state=tk.NORMAL)
@@ -197,7 +197,7 @@ def define_a_situacao_de_saude_do_usuario(imc):
     # usuário está abaixo do peso
     if imc < 18.5:
 
-        mensagem = "abaixo do peso"
+        mensagem = "peso abaixo do recomendado"
 
     # usuário está com peso normal
     elif imc <= 24.9:
@@ -222,7 +222,7 @@ def define_a_situacao_de_saude_do_usuario(imc):
     # usuário está com obesidade grau III
     elif imc >= 40:
 
-        mensagem = "obesidad grau III"
+        mensagem = "obesidade grau III"
 
 
     return mensagem
