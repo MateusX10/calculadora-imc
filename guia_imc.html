@@ -11,18 +11,53 @@
     <h1>GUIA DO IMC</h1>
     <br>
 
-    <h2>O que é IMC</h2><br>
-    <pre>     O cálculo do Índice de Massa Corporal (IMC) permite dizer se você está com um peso saudável ou não.Isso depende do peso e da altura da pessoa.Abaixo, segue-se a fórmula do IMC (peso em Kg dividido pela altura ao quadrado em metros):
-        imc = peso / (altura²)
+    <h2>O que é o IMC?</h2><br>
+    <pre>     O cálculo do Índice de Massa Corporal (IMC) permite dizer se você está com um peso saudável ou não.Isso depende do peso e da altura da pessoa.Abaixo, segue-se a fórmula do IMC (peso em Kg dividido pela altura ao quadrado em metros):</pre>
 
-    Após você fazer o cálculo do IMC dividindo o seu peso pela sua altura ao quadrado, você receberá um valor, provavelmente entre 20 e 35 aproximadamente, mas o que esse valor significa?Bem, apenas pegue o valor resultante e veja em qual categoria da tabela abaixo ele se encontra: 
+    <br><p>Fórmula:</p>
+
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+
+        <mi>imc</mi>
+        <mo>=</mo>
+        <mfrac linethickness="2">
+            <mi>peso</mi>
+            <mrow>
+                <msup>
+                    <mi>altura</mi>
+                    <mn>2</mn>
+                </msup>
+            </mrow>
+
+        </mfrac>
+    </math>
+
+    <script>
+
+        function quebraLinha(quantidadeDeRepeticoes){
+
+        for (var i=0; i < quantidadeDeRepeticoes; i++){
+
+            document.write("<br>");
+        }
+        }
+
+
+        quebraLinha(3);
+
+    </script>
+
+    <pre>Após você fazer o cálculo do IMC dividindo o seu peso pela sua altura ao quadrado, você receberá um valor, provavelmente entre 20 e 35 aproximadamente, mas o que esse valor significa?Bem, apenas pegue o valor resultante e veja em qual categoria da tabela abaixo ele se encontra: 
+
+
     <br>
+
+    <h2>Tabela do IMC</h2>
+    
     </pre>
 
 
     <table border="1">
-
-        <caption>Tabela IMC</caption>
 
         <tr>
             <th>Intervalo</th>
@@ -60,19 +95,26 @@
 
     </table>
 
+    <script> // executa a tag br 5 vezes
+
+
+        quebraLinha(5);
+
+    
+    </script>
+
+
     <h2>Vantagens e Desvantagens de usar o IMC</h2>
 
     <pre>
 
-    Vantagens:
+        <h2>  Vantagens:</h2>
 
-        1 - Simplicidade: O cálculo do IMC é relativamente simples e direto, exigindo apenas informações básicas de peso e altura.
+        1 - Simplicidade: sabendo o seu peso e sua altura e tendo uma calculadora em mãos, você facilmente consegue calcular o seu IMC.
 
-        2 - Ampla Aplicação: O IMC é amplamente utilizado em estudos populacionais, pesquisas epidemiológicas e avaliações de saúde em larga escala devido à sua simplicidade e eficácia.
+        2 - te permite ter um geral de seu estado de saúde: O IMC pode fornecer uma visão geral do estado nutricional de uma pessoa e ajudar a identificar casos de desnutrição ou sobrepeso.
 
-        3 - Indicador Geral de Saúde: O IMC pode fornecer uma visão geral do estado nutricional de uma pessoa e ajudar a identificar casos de desnutrição ou sobrepeso.
-
-    Desvantagens:
+        <h2>  Desvantagens:</h2>
 
         1 - Não Diferenciação entre Massa Muscular e Gordura: O IMC não distingue entre massa muscular e gordura, o que pode levar a avaliações imprecisas em atletas ou pessoas com uma composição corporal atípica.
 
@@ -80,11 +122,10 @@
 
         3 - Não Considera a Idade: O IMC não leva em conta as mudanças normais na composição corporal que ocorrem com o envelhecimento, o que pode resultar em avaliações inadequadas, especialmente em idosos.
 
-        4 - Não Considera Diferenças Étnicas: O IMC pode não ser igualmente preciso em diferentes grupos étnicos, já que as proporções de massa muscular e gordura podem variar.
-
-        5 - Simplicidade Excessiva: Enquanto a simplicidade é uma vantagem, também pode ser uma desvantagem, pois não fornece uma imagem completa da saúde de uma pessoa.
-
     </pre>
+
+
+    
         
 </body>
 </html>
